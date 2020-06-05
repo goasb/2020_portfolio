@@ -1,0 +1,17 @@
+body { margin: 0; padding: 0; }
+
+#wrap { width: 1920px; height: 100%; background-color: #555; }
+
+#headBox { position: fixed; width: 1120px; height: 100px; padding-top: 30px; right: 0; left: 0; margin: auto; background-color: #faf; }
+
+#headBox .nav { width: 100%; height: 100%; background-color: #dda; }
+
+#headBox .nav h1 { float: left; width: 100px; height: 100px; background-color: #ab0; }
+
+#headBox .nav ul { float: right; display: flex; width: 600px; height: 100%; background-color: #ff7; }
+
+#headBox .nav ul li { width: 120px; height: 100%; text-align: center; line-height: 100px; background-color: #eea; }
+
+#headBox .nav ul li:nth-child(1) { background-image: url("../../img/Home.png"); background-size: 50%; background-repeat: no-repeat; }
+
+#headBox .nav ul li a { display: block; width: 100%; height: 100%; }
