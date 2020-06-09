@@ -60,12 +60,12 @@
           </div>
 
           <div class="icon">
-            <ul>
-              <li class="icon_01"><a href="#banner"><span class="hidden">facebook</span></a></li>
-              <li class="icon_02"><a href="#banner"><span class="hidden">instargram</span></a></li>
-              <li class="icon_03"><a href="#banner"><span class="hidden">pinterest</span></a></li>
-              <li class="icon_04"><a href="#banner"><span class="hidden">youtube</span></a></li>
-            </ul>
+            <div class="fontawesome">
+              <a href="#"><i class="fab fa-facebook"></i><span>Facebook</span></a>
+              <a href="#"><i class="fab fa-twitter"></i><span>Twitter</span></a>
+              <a href="#"><i class="fab fa-google"></i><span>Google+</span></a>
+              <a href="#"><i class="fab fa-github"></i><span>Github</span></a>
+            </div>
           </div> <!-- icon -->
 
           <div class="pointer">
@@ -79,6 +79,108 @@
 
 
        <section id="profile">
+
+        <!--================================= popup skills ================================= -->
+          <section class="skill_pop scroll">
+            <div class="abtitle">
+              <h2>ABILITIES</h2>
+              <p>Web Publishing skills</p>
+            </div>
+
+            <button type="button" class="closeBtn">
+              <span class="hidden">닫기 버튼</span>
+            </button>
+   
+            <div class="abBox">
+            <div class="abProgram">
+              <div class="bar ps">
+                <dl>
+                  <dt>Photoshop</dt>
+                  <dd class="narr">사진 및 각종 이미지 편집</dd>
+                  <dd class='gage'>
+                    <span><i></i></span>
+                    <em><span class="count">90</span>%</em>
+                 </dd>
+                </dl>
+              </div>
+              <div class="bar ai">
+               <dl>
+                 <dt>Illustrator</dt>
+                 <dd class="narr">UXUI,캐릭터 및 로고 디자인</dd>
+                 <dd class='gage'>
+                   <span><i></i></span>
+                   <em><span class="count">90</span>%</em>
+                </dd>
+               </dl>
+              </div>
+              <div class="bar id">
+               <dl>
+                 <dt>Indesign</dt>
+                 <dd class="narr">문서 작업 및 편집</dd>
+                 <dd class='gage'>
+                   <span><i></i></span>
+                   <em><span class="count">70</span>%</em>
+                </dd>
+               </dl>
+              </div>
+              <div class="bar html">
+               <dl>
+                 <dt>HTML</dt>
+                 <dd class="narr">시맨틱 구조구성</dd>
+                 <dd class='gage'>
+                   <span><i></i></span>
+                   <em><span class="count">90</span>%</em>
+                </dd>
+               </dl>
+              </div>
+             </div> <!-- abProgram -->
+   
+             <div class="abProgram">
+               <div class="bar css">
+               <dl>
+                 <dt>CSS</dt>
+                 <dd class="narr">반응형 웹페이지 구현</dd>
+                 <dd class='gage'>
+                   <span><i></i></span>
+                   <em><span class="count">90</span>%</em>
+                </dd>
+               </dl>
+              </div>
+              <div class="bar scss">
+               <dl>
+                 <dt>SCSS</dt>
+                 <dd class="narr">반응형 웹페이지 구현</dd>
+                 <dd class='gage'>
+                   <span><i></i></span>
+                   <em><span class="count">90</span>%</em>
+                </dd>
+               </dl>
+              </div>
+              <div class="bar js">
+               <dl>
+                 <dt>JS (jQuery)</dt>
+                 <dd class="narr">하드코딩 , 웹페이지 유동성 구현</dd>
+                 <dd class='gage'>
+                   <span><i></i></span>
+                   <em><span class="count">80</span>%</em>
+                </dd>
+               </dl>
+              </div>
+              <div class="bar git">
+               <dl>
+                 <dt>Git</dt>
+                 <dd class="narr">Git 연동 및 버전관리</dd>
+                 <dd class='gage'>
+                   <span><i></i></span>
+                   <em><span class="count">70</span>%</em>
+                </dd>
+               </dl>
+              </div>
+             </div> <!-- abProgram_02 -->
+           </div> <!-- abBox -->
+          </section> <!-- skill_pop -->
+
+
          <div class="profileBox">
            <div class="myImg"></div>
            <div class="myTextBox">
@@ -115,18 +217,21 @@
              </div> <!-- Privacy -->
              
              <div class="buttonBox">
-              <div class="contact">
-                <span><a href="#profile">Contact Us</a></span>
+              <div class="contact"><a href="#profile" class="fx">
+                  <span>Contact Us</span>
+                </a>
               </div>
-              <div class="skill">
-                <span><a href="#profile">Abilities Skills</a></span>
+
+              <div class="skill"><a href="#profile" class="fx">
+                  <span>Abilities Skills</span>
+                </a>
               </div>
             </div> <!-- buttonBox -->
            </div> <!-- myTextBox -->
          </div> <!-- profileBox -->
        </section> <!-- #profile -->
 
-
+       
        <section id="portfolio">
          <div class="product_textBox">
            <h2>My Portfolio</h2>
@@ -171,8 +276,9 @@
            </ul>
          </div> <!-- product -->
 
-         <div class="load_more">
-           <span><a href="#portfolio">Load More</a></span>
+         <div class="load_more"><a href="#portfolio" class="fx">
+           <span>Load More</span>
+          </a>
          </div>
        </section> <!-- portfolio -->
 
@@ -270,32 +376,6 @@
 
        <div class="emptyBox"></div>
 
-       <section id="map">
-         <!-- * 카카오맵 - 지도퍼가기 -->
-         <!-- 1. 지도 노드 -->
-         <div id="daumRoughmapContainer1591688025192" 
-         class="root_daum_roughmap root_daum_roughmap_landing"></div>
-
-         <!--
-	        2. 설치 스크립트
-	        * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
-          -->
-         <script charset="UTF-8" class="daum_roughmap_loader_script"
-           src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
-
-         <!-- 3. 실행 스크립트 -->
-         <script charset="UTF-8">
-           new daum.roughmap.Lander({
-             "timestamp": "1591688025192",
-             "key": "ypwv",
-             "mapWidth": "1120",
-             "mapHeight": "450"
-           }).render();
-         </script>
-       </section> <!-- map -->
-
-       <div class="emptyBox_02"></div>
-
        <footer id="footBox">
          <div class="textBox">
            <ul class="link">
@@ -320,5 +400,6 @@
 <script src="../js/base/jquery-ui.min.js"></script>
 <script src="../js/src/slide.js"></script>
 <script src="../js/src/hover.js"></script>
+<script src="../js/src/btn_hover.js"></script>
 </body>
 </html>
