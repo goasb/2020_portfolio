@@ -1,10 +1,11 @@
 body {margin:0; padding:0;}
-#wrap {width:1920px; height: 100%; background-color: rgb(233, 232, 232);}
+a:focus{outline:0;}
+button:focus{outline:0;}
+#wrap {width:1903px; height: 100%; background-color: rgb(233, 232, 232);}
 #bg {width: 100%; height: 100%; 
     @include url; 
-    background-image: url(../img/main_bg.jpg); 
-    background-size:cover;
-    background-position: 50% 0;}
+    background-image: url(../img/main_bg_02.jpg); 
+    background-size:cover;}
 
 #headBox {
     width:1120px; 
@@ -192,9 +193,8 @@ body {margin:0; padding:0;}
 
             .wheel {
                 margin:auto;
-                width: 3px;
+                width: 5px;
                 height: 10px;
-                transform:translateX(-50%);
                 text-indent: -3000px;
                 background-color: #222;
                 border-radius:10px;
@@ -206,27 +206,500 @@ body {margin:0; padding:0;}
 
 
 #profile {
+    padding-top:100px;
+    box-sizing: border-box;
     width: 100%;
-    height: 300px;
-    background-color: #999;
-}
+    height: 780px;
+
+    .profileBox {
+        width: 1120px;
+        height: 570px;
+        margin:auto;
+
+        .myImg {
+            float:left;
+            width: 400px;
+            height: 570px;
+            @include url;
+            background-image: url(../img/my.png);
+        } /* myImg */
+
+        .myTextBox {
+            color:#222;
+            float:right;
+            width: 660px;
+            height: 570px;
+
+            .intro {
+                width: 100%;
+                height: 250px;
+                
+                h5 {
+                    font-size: 18px;
+                    padding:5px;
+                }
+
+                h2 {
+                    padding:5px;
+                }
+
+                p {
+                    padding:5px;
+                    line-height:25px;
+                }
+            } /* intro */
+
+            .Privacy {
+                width: 100%;
+                height: 250px;
+
+                p {
+                    font-size: 20px;
+                    line-height: 50px;
+                }
+
+                .leftBox {
+                    float:left;
+                    width: 200px;
+                    height: 100%;
+                } /* leftBox */
+
+                .rightBox {
+                    float:right;
+                    width: 460px;
+                    height: 100%;
+                } /* rightBox */    
+            } /* Privacy */
+
+            .buttonBox {
+                padding-top:20px;
+                box-sizing: border-box;
+                width: 450px;
+                height: 70px;
+
+                .contact {
+                    float:left;
+                    width: 200px;
+                    height: 50px;
+                    border-radius:30px;
+                    background-color: #222;
+
+                    span {
+                        text-align: center;
+                        line-height: 50px;
+                        color:#fff;
+                        font-weight: bold;
+
+                        a {
+                            display: block;
+                            color:#fff;
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+
+                .skill {
+                    float:right;
+                    width: 200px;
+                    height: 50px;
+                    border-radius:30px;
+                    border:1px solid #222;
+
+                    span {
+                        display: block;
+                        text-align: center;
+                        line-height: 50px;
+                        font-weight: bold;
+
+                        a {
+                            display: block;
+                            color:#222;
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                } /* skill */
+            } /* buttonBox */
+        } /* myTextBox */
+    } /* .profileBox */
+} /* #profile */
+
+
+
+
+
 #portfolio {
+    padding-top:100px;
+    box-sizing: border-box;
     width: 100%;
-    height: 300px;
-    background-color: #888;
-}
+    height: 738px;
+
+    .product_textBox {
+        margin:auto;
+        width: 1120px;
+        height: 250px;
+
+        h2 {
+            text-align: center;
+            width: 100%;
+            height: 40px;
+        }
+
+        p {
+            text-align: center;
+            margin-bottom:40px;
+        }
+        
+        .red_line {
+            margin:auto;
+            width: 4px;
+            height: 30px;
+            background-color: red;
+        }
+    } /* product_textBox */
+
+    .product {
+        margin-bottom:30px;
+        width:100%;
+        height: 384px;
+
+        ul {
+            width: 100%;
+            height: 100%;
+
+            li {
+                float:left;
+                width: 475px;
+                height: 100%;
+                overflow: hidden;
+                @include url;
+                background-image: url(../img/tesla_mokup.png);
+                background-size:80%;
+
+                a {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+
+                    dl {
+                        width: 100%;
+                        height: 100%;
+                        background-color:rgba(0,0,0,0.7); 
+                        transform: translateY(100%); 
+                        transition:300ms ease;
+
+                        dt {
+                            width: 100%;
+                            height: 10px;
+                            text-align: center;
+                            line-height: 30px;
+                            color:#fff;
+                            font-size: 18px;
+                            font-weight: bold;
+                            transition:all 300ms ease;
+                        } /* dt */
+
+                        dd {
+                            width: 100%;
+                            height: 100%;
+                            text-align: center;
+                            margin-top:30px;
+                            font-size: 16px;
+                            color:#fff;
+                            line-height: 18px;
+                            opacity: 1;
+                            transition:all 300ms ease;
+                        } /* dd */
+                    } /* dl */
+                } /* a */
+                a.active dl{transform:translateY(0);}
+                a.active dt{color:#f30;}
+                a.active dd{opacity:1;}
+            }
+
+            li:nth-child(2) {
+                background-image: url(../img/2019_portfolio.png);
+                background-size:100%;
+            }
+            li:nth-child(3) {
+                background-image: url(../img/dell_mokup.png);
+                background-size:100%;
+            }
+            li:nth-child(4) {
+                background-image: url(../img/nivea_mokup.png);
+                background-size:100%;
+            }
+        } /* ul */
+    } /* .product */
+
+    .load_more {
+            margin:auto;
+            width: 200px;
+            height: 50px;
+            border-radius:30px;
+            background-color: #222;
+
+            span {
+                text-align: center;
+                line-height: 50px;
+                color:#fff;
+                font-weight: bold;
+
+                a {
+                    display: block;
+                    color:#fff;
+                    width: 100%;
+                    height: 100%;
+                }
+            
+        }
+    } /* load_more */
+} /* #portfolio */
+
+
+
 #resume {
+    padding-top:300px;
+    box-sizing: border-box;
     width: 100%;
-    height: 300px;
-    background-color: #777;
-}
-#map {
-    width: 100%;
-    height: 300px;
-    background-color: #666;
-}
-#footBox {
-    width: 100%;
-    height: 300px;
-    background-color: #555;
-}
+    height: 1300px;
+
+    .product_textBox {
+        margin:auto;
+        width: 1120px;
+        height: 160px;
+
+        h2 {
+            text-align: center;
+            width: 100%;
+            height: 40px;
+        }
+
+        p {
+            text-align: center;
+            margin-bottom:40px;
+        }
+        
+        .red_line {
+            margin:auto;
+            width: 4px;
+            height: 30px;
+            background-color: red;
+        }
+    } /* product_textBox */
+
+.resumeBox {
+    padding-top:100px;
+    width: 1120px;
+    height: 800px;
+    margin:auto;
+
+    .title {
+        margin-bottom: 30px;
+        display: flex;
+        width: 100%;
+        height: 30px;
+
+        .icon_01 {
+            width: 30px;
+            height: 30px;
+            @include url;
+            background-image: url(../img/Education.png);
+        } /* icon_01 */
+    } /* title */
+
+    .title_02 {
+        margin-top:20px;
+        margin-bottom: 30px;
+        display: flex;
+        width: 100%;
+        height: 30px;
+
+        .icon_02 {
+            width: 30px;
+            height: 30px;
+            @include url;
+            background-image: url(../img/Experience.png);
+        } /* .icon_02 */
+    } /* .title_02 */
+
+    h2 {
+        margin-left: 15px;
+    }
+    
+
+    .resume_element {
+        width: 100%;
+        height: 190px;
+        border:1px solid #222;
+        margin-bottom:30px;
+
+        p {
+            padding:15px;
+        }
+
+        span {
+            padding:15px;
+            font-weight:bold;
+        }
+
+        .underline {
+            margin:10px 0 0 15px;
+            width: 510px;
+            height: 1px;
+            background-color: #222;
+        }
+    } /* resume_element */
+
+    .Education {
+        float:left;
+        width: 550px;
+        height: 750px;
+    } /* Education */
+
+    .Experience {
+        float:right;
+        width: 550px;
+        height: 750px;
+    } /* Experience */
+ } /* resumeBox */
+
+    .fixBox {
+        margin-bottom:50px;
+        width: 100%;
+        height: 300px;
+        @include url;
+        background-image: url(../img/code.jpg);
+        background-size:cover;
+        background-position: 50% 20%;
+        background-attachment: fixed;
+        opacity: 30%;
+    } /* fixBox */
+
+    .persona_slide {
+        overflow: hidden;
+        margin: auto;
+        position: relative;
+        width: 100%;
+        max-width: 1120px;
+        height: 500px;
+        margin-top: 80px;
+
+        .btn {
+            position: absolute;
+            z-index: 30;
+            bottom:50%;
+            width: 1120px;
+            height: 100px;
+
+            .prevBtn {
+                float:left;
+                background-color:transparent;
+            }
+
+            .nextBtn {
+                float:right;
+                background-color:transparent;
+            }
+
+            button {
+                width: 100px;
+                height: 100px;
+                font-size: 1rem;
+                color: #00136F
+            } /* button */
+        } /* btn */
+
+
+        ul {
+            $count: 4;
+            position: relative;
+            margin-left: -100%;
+            width: 100% * $count;
+            height: 100%;
+
+            li {
+                float: left;
+                width: 100% / $count;
+                height: 100%;
+                @include url;
+
+                &.persona_slide_image_01 {
+                    background-image: url("../img/persona_01.png");
+                }
+
+                &.persona_slide_image_02 {
+                    background-image: url("../img/persona_02.png");
+                }
+
+                &.persona_slide_image_03 {
+                    background-image: url("../img/persona_03.png");
+                }
+            } /* li */
+        } /* ul */
+    } /* main_slide */
+} /* #resume */
+
+    .emptyBox {
+        width: 100%;
+        height: 1000px;
+    }
+
+    #map {
+        width: 1120px;
+        height: 300px;
+        margin:auto;
+        background-color: #222;
+    }
+
+    .emptyBox_02 {
+        width: 100%;
+        height: 300px;
+    }
+
+    #footBox {
+        width: 100%;
+        height: 220px;
+        background-color: #222;
+        color:#fff;
+
+        .textBox {
+            width: 1120px;
+            height: 100%;
+            margin:auto;
+            text-align: center;
+
+            .link {
+                margin:auto;
+                width: 250px;
+                height: 80px;
+                display: flex;
+
+                li {
+                    width: 100px;
+                    height: 100%;
+                    margin-left: 12px;
+
+                    a {
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        color:#fff;
+                        line-height: 80px;
+                    }
+                } /* li */
+            } /* link */
+
+            .site {
+                width: 100%;
+                height: 60px;
+
+                h2 {
+                    font-size: 18px;
+                    line-height:1.7;
+                }
+            }
+        } /* textBox */
+    } /* footBox */ 
+

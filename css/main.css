@@ -1,9 +1,13 @@
 /* @mixin myname(){}   // @include myname(); @function myFn(){}  // myFn(); */
 body { margin: 0; padding: 0; }
 
-#wrap { width: 1920px; height: 100%; background-color: #e9e8e8; }
+a:focus { outline: 0; }
 
-#bg { width: 100%; height: 100%; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-image: url(../img/main_bg.jpg); background-size: cover; background-position: 50% 0; }
+button:focus { outline: 0; }
+
+#wrap { width: 1903px; height: 100%; background-color: #e9e8e8; }
+
+#bg { width: 100%; height: 100%; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-image: url(../img/main_bg_02.jpg); background-size: cover; }
 
 #headBox { width: 1120px; height: 100px; padding-top: 30px; margin: auto; }
 
@@ -66,14 +70,165 @@ body { margin: 0; padding: 0; }
 
 #banner .textBox .pointer .mouse { margin: auto; width: 30px; height: 50px; border: 2px solid #222; border-radius: 15px; box-sizing: border-box; }
 
-#banner .textBox .pointer .wheel { margin: auto; width: 3px; height: 10px; transform: translateX(-50%); text-indent: -3000px; background-color: #222; border-radius: 10px; animation: mousewheel 1s linear infinite; }
+#banner .textBox .pointer .wheel { margin: auto; width: 5px; height: 10px; text-indent: -3000px; background-color: #222; border-radius: 10px; animation: mousewheel 1s linear infinite; }
 
-#profile { width: 100%; height: 300px; background-color: #999; }
+#profile { padding-top: 100px; box-sizing: border-box; width: 100%; height: 780px; /* .profileBox */ }
 
-#portfolio { width: 100%; height: 300px; background-color: #888; }
+#profile .profileBox { width: 1120px; height: 570px; margin: auto; /* myImg */ /* myTextBox */ }
 
-#resume { width: 100%; height: 300px; background-color: #777; }
+#profile .profileBox .myImg { float: left; width: 400px; height: 570px; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-image: url(../img/my.png); }
 
-#map { width: 100%; height: 300px; background-color: #666; }
+#profile .profileBox .myTextBox { color: #222; float: right; width: 660px; height: 570px; /* intro */ /* Privacy */ /* buttonBox */ }
 
-#footBox { width: 100%; height: 300px; background-color: #555; }
+#profile .profileBox .myTextBox .intro { width: 100%; height: 250px; }
+
+#profile .profileBox .myTextBox .intro h5 { font-size: 18px; padding: 5px; }
+
+#profile .profileBox .myTextBox .intro h2 { padding: 5px; }
+
+#profile .profileBox .myTextBox .intro p { padding: 5px; line-height: 25px; }
+
+#profile .profileBox .myTextBox .Privacy { width: 100%; height: 250px; /* leftBox */ /* rightBox */ }
+
+#profile .profileBox .myTextBox .Privacy p { font-size: 20px; line-height: 50px; }
+
+#profile .profileBox .myTextBox .Privacy .leftBox { float: left; width: 200px; height: 100%; }
+
+#profile .profileBox .myTextBox .Privacy .rightBox { float: right; width: 460px; height: 100%; }
+
+#profile .profileBox .myTextBox .buttonBox { padding-top: 20px; box-sizing: border-box; width: 450px; height: 70px; /* skill */ }
+
+#profile .profileBox .myTextBox .buttonBox .contact { float: left; width: 200px; height: 50px; border-radius: 30px; background-color: #222; }
+
+#profile .profileBox .myTextBox .buttonBox .contact span { text-align: center; line-height: 50px; color: #fff; font-weight: bold; }
+
+#profile .profileBox .myTextBox .buttonBox .contact span a { display: block; color: #fff; width: 100%; height: 100%; }
+
+#profile .profileBox .myTextBox .buttonBox .skill { float: right; width: 200px; height: 50px; border-radius: 30px; border: 1px solid #222; }
+
+#profile .profileBox .myTextBox .buttonBox .skill span { display: block; text-align: center; line-height: 50px; font-weight: bold; }
+
+#profile .profileBox .myTextBox .buttonBox .skill span a { display: block; color: #222; width: 100%; height: 100%; }
+
+/* #profile */
+#portfolio { padding-top: 100px; box-sizing: border-box; width: 100%; height: 738px; /* product_textBox */ /* .product */ /* load_more */ }
+
+#portfolio .product_textBox { margin: auto; width: 1120px; height: 250px; }
+
+#portfolio .product_textBox h2 { text-align: center; width: 100%; height: 40px; }
+
+#portfolio .product_textBox p { text-align: center; margin-bottom: 40px; }
+
+#portfolio .product_textBox .red_line { margin: auto; width: 4px; height: 30px; background-color: red; }
+
+#portfolio .product { margin-bottom: 30px; width: 100%; height: 384px; /* ul */ }
+
+#portfolio .product ul { width: 100%; height: 100%; }
+
+#portfolio .product ul li { float: left; width: 475px; height: 100%; overflow: hidden; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-image: url(../img/tesla_mokup.png); background-size: 80%; /* a */ }
+
+#portfolio .product ul li a { display: block; width: 100%; height: 100%; /* dl */ }
+
+#portfolio .product ul li a dl { width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.7); transform: translateY(100%); transition: 300ms ease; /* dt */ /* dd */ }
+
+#portfolio .product ul li a dl dt { width: 100%; height: 10px; text-align: center; line-height: 30px; color: #fff; font-size: 18px; font-weight: bold; transition: all 300ms ease; }
+
+#portfolio .product ul li a dl dd { width: 100%; height: 100%; text-align: center; margin-top: 30px; font-size: 16px; color: #fff; line-height: 18px; opacity: 1; transition: all 300ms ease; }
+
+#portfolio .product ul li a.active dl { transform: translateY(0); }
+
+#portfolio .product ul li a.active dt { color: #f30; }
+
+#portfolio .product ul li a.active dd { opacity: 1; }
+
+#portfolio .product ul li:nth-child(2) { background-image: url(../img/2019_portfolio.png); background-size: 100%; }
+
+#portfolio .product ul li:nth-child(3) { background-image: url(../img/dell_mokup.png); background-size: 100%; }
+
+#portfolio .product ul li:nth-child(4) { background-image: url(../img/nivea_mokup.png); background-size: 100%; }
+
+#portfolio .load_more { margin: auto; width: 200px; height: 50px; border-radius: 30px; background-color: #222; }
+
+#portfolio .load_more span { text-align: center; line-height: 50px; color: #fff; font-weight: bold; }
+
+#portfolio .load_more span a { display: block; color: #fff; width: 100%; height: 100%; }
+
+/* #portfolio */
+#resume { padding-top: 300px; box-sizing: border-box; width: 100%; height: 1300px; /* product_textBox */ /* resumeBox */ /* fixBox */ /* main_slide */ }
+
+#resume .product_textBox { margin: auto; width: 1120px; height: 160px; }
+
+#resume .product_textBox h2 { text-align: center; width: 100%; height: 40px; }
+
+#resume .product_textBox p { text-align: center; margin-bottom: 40px; }
+
+#resume .product_textBox .red_line { margin: auto; width: 4px; height: 30px; background-color: red; }
+
+#resume .resumeBox { padding-top: 100px; width: 1120px; height: 800px; margin: auto; /* title */ /* .title_02 */ /* resume_element */ /* Education */ /* Experience */ }
+
+#resume .resumeBox .title { margin-bottom: 30px; display: flex; width: 100%; height: 30px; /* icon_01 */ }
+
+#resume .resumeBox .title .icon_01 { width: 30px; height: 30px; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-image: url(../img/Education.png); }
+
+#resume .resumeBox .title_02 { margin-top: 20px; margin-bottom: 30px; display: flex; width: 100%; height: 30px; /* .icon_02 */ }
+
+#resume .resumeBox .title_02 .icon_02 { width: 30px; height: 30px; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-image: url(../img/Experience.png); }
+
+#resume .resumeBox h2 { margin-left: 15px; }
+
+#resume .resumeBox .resume_element { width: 100%; height: 190px; border: 1px solid #222; margin-bottom: 30px; }
+
+#resume .resumeBox .resume_element p { padding: 15px; }
+
+#resume .resumeBox .resume_element span { padding: 15px; font-weight: bold; }
+
+#resume .resumeBox .resume_element .underline { margin: 10px 0 0 15px; width: 510px; height: 1px; background-color: #222; }
+
+#resume .resumeBox .Education { float: left; width: 550px; height: 750px; }
+
+#resume .resumeBox .Experience { float: right; width: 550px; height: 750px; }
+
+#resume .fixBox { margin-bottom: 50px; width: 100%; height: 300px; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-image: url(../img/code.jpg); background-size: cover; background-position: 50% 20%; background-attachment: fixed; opacity: 30%; }
+
+#resume .persona_slide { overflow: hidden; margin: auto; position: relative; width: 100%; max-width: 1120px; height: 500px; margin-top: 80px; /* btn */ /* ul */ }
+
+#resume .persona_slide .btn { position: absolute; z-index: 30; bottom: 50%; width: 1120px; height: 100px; /* button */ }
+
+#resume .persona_slide .btn .prevBtn { float: left; background-color: transparent; }
+
+#resume .persona_slide .btn .nextBtn { float: right; background-color: transparent; }
+
+#resume .persona_slide .btn button { width: 100px; height: 100px; font-size: 1rem; color: #00136F; }
+
+#resume .persona_slide ul { position: relative; margin-left: -100%; width: 400%; height: 100%; /* li */ }
+
+#resume .persona_slide ul li { float: left; width: 25%; height: 100%; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; }
+
+#resume .persona_slide ul li.persona_slide_image_01 { background-image: url("../img/persona_01.png"); }
+
+#resume .persona_slide ul li.persona_slide_image_02 { background-image: url("../img/persona_02.png"); }
+
+#resume .persona_slide ul li.persona_slide_image_03 { background-image: url("../img/persona_03.png"); }
+
+/* #resume */
+.emptyBox { width: 100%; height: 1000px; }
+
+#map { width: 1120px; height: 300px; margin: auto; background-color: #222; }
+
+.emptyBox_02 { width: 100%; height: 300px; }
+
+#footBox { width: 100%; height: 220px; background-color: #222; color: #fff; /* textBox */ }
+
+#footBox .textBox { width: 1120px; height: 100%; margin: auto; text-align: center; /* link */ }
+
+#footBox .textBox .link { margin: auto; width: 250px; height: 80px; display: flex; /* li */ }
+
+#footBox .textBox .link li { width: 100px; height: 100%; margin-left: 12px; }
+
+#footBox .textBox .link li a { display: block; width: 100%; height: 100%; color: #fff; line-height: 80px; }
+
+#footBox .textBox .site { width: 100%; height: 60px; }
+
+#footBox .textBox .site h2 { font-size: 18px; line-height: 1.7; }
+
+/* footBox */
