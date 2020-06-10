@@ -206,7 +206,7 @@ button:focus { outline: 0; }
 
 #portfolio .product ul li a.active dd { opacity: 1; }
 
-#portfolio .product ul li:nth-child(2) { background-image: url(../img/2019_portfolio.png); background-size: 100%; }
+#portfolio .product ul li:nth-child(2) { background-image: url(../img/2019.png); background-size: 100%; }
 
 #portfolio .product ul li:nth-child(3) { background-image: url(../img/dell_mokup.png); background-size: 100%; }
 
