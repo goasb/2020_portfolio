@@ -17,19 +17,9 @@ button:focus { outline: 0; }
 
 #headBox .nav h1 a { display: block; width: 100%; height: 100%; }
 
-#headBox .nav ul { float: right; display: flex; width: 600px; height: 100%; }
+#headBox .nav ul { float: right; display: flex; width: 600px; height: 100%; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-image: url(../img/nav.png); }
 
 #headBox .nav ul li { width: 120px; height: 100%; }
-
-#headBox .nav ul li:nth-child(1) { background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-image: url("../img/Home.png"); background-size: 46%; }
-
-#headBox .nav ul li:nth-child(2) { background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-image: url("../img/profile.png"); background-size: 50%; }
-
-#headBox .nav ul li:nth-child(3) { background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-image: url("../img/portfolio.png"); background-size: 50%; }
-
-#headBox .nav ul li:nth-child(4) { background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-image: url("../img/resume.png"); background-size: 50%; }
-
-#headBox .nav ul li:nth-child(5) { background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-image: url("../img/contact.png"); background-size: 50%; }
 
 #headBox .nav ul li a { display: block; width: 100%; height: 100%; }
 

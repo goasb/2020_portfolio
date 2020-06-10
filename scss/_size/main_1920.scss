@@ -39,35 +39,38 @@ button:focus{outline:0;}
             display: flex;
             width: 600px; 
             height: 100%;
+            @include url;
+            background-image: url(../img/nav.png);
+
             li {
                 width: 120px;
                 height: 100%;
 
-                &:nth-child(1) {
-                    @include url;
-                    background-image: url("../img/Home.png");
-                    background-size:46%;
-                }
-                &:nth-child(2) {
-                    @include url;
-                    background-image: url("../img/profile.png");
-                    background-size:50%;
-                }
-                &:nth-child(3) {
-                    @include url;
-                    background-image: url("../img/portfolio.png");
-                    background-size:50%;
-                }
-                &:nth-child(4) {
-                    @include url;
-                    background-image: url("../img/resume.png");
-                    background-size:50%;
-                }
-                &:nth-child(5) {
-                    @include url;
-                    background-image: url("../img/contact.png");
-                    background-size:50%;
-                }
+                // &:nth-child(1) {
+                //     @include url;
+                //     background-image: url("../img/Home.png");
+                //     background-size:46%;
+                // }
+                // &:nth-child(2) {
+                //     @include url;
+                //     background-image: url("../img/profile.png");
+                //     background-size:50%;
+                // }
+                // &:nth-child(3) {
+                //     @include url;
+                //     background-image: url("../img/portfolio.png");
+                //     background-size:65%;
+                // }
+                // &:nth-child(4) {
+                //     @include url;
+                //     background-image: url("../img/resume.png");
+                //     background-size:60%;
+                // }
+                // &:nth-child(5) {
+                //     @include url;
+                //     background-image: url("../img/contact.png");
+                //     background-size:60%;
+                // }
 
                 a {
                     display: block;
