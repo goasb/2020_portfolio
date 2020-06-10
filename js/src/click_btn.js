@@ -12,12 +12,12 @@
 // 작동
     skillLink.on('click',function(e){
         e.preventDefault();
-        skillPop.addClass('active');
+        skillPop.fadeIn(500);
     });
 
     closeBtn.on('click',function(e){
         e.preventDefault();
-        skillPop.removeClass('active');
+        skillPop.fadeOut(500);
     });
 
 })(jQuery);
