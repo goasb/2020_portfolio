@@ -1,0 +1,58 @@
+@mixin main_1280 {
+    @media screen and (min-width:1280px) and (max-width:1919px) {
+
+#bg {height: 50rem;}
+
+
+#banner {
+    height: 25rem;
+
+    .textBox {
+        .icon {
+            .fontawesome {
+                top: 29rem;
+            }
+        } // .icon
+
+        .pointer {
+            margin-top: 10rem;
+        } // .pointer
+    } // .textBox
+} // #banner
+
+
+#profile {
+    .top-btn {
+        bottom: 2.5rem;
+        right: 2.5rem;
+        border-radius: 0.5rem;
+        line-height: 2.5rem;
+    }
+
+    .circle {
+        left: 5rem;
+    } // circle
+} // #profile
+
+
+#portfolio {
+    .product {
+        ul {
+            li {
+                width: 19.64rem;
+            }
+        } // ul
+    } // .product
+} // #portfolio
+
+
+#resume {
+    button {
+        font-size: 1rem;
+    } // button
+} // #resume
+
+
+
+ } // @media screen
+} // @mixin pc_1920
