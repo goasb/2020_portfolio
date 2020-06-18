@@ -33,7 +33,7 @@
      <div id="bg">
        <header id="headBox">
          <div class="nav">
-          <h1><a href="main.html"><span class="hidden">logo</span></a></h1>
+           <h1><a href="main.html"><span class="hidden">logo</span></a></h1>
            <ul>
              <li><a href="#"><span class="hidden">home</span></a></li>
              <li><a href="#profile"><span class="hidden">profile</span></a></li>
@@ -41,7 +41,39 @@
              <li><a href="#resume"><span class="hidden">resume</span></a></li>
              <li><a href="#footBox"><span class="hidden">content</span></a></li>
            </ul>
-         </div> 
+         </div>
+         <!-- ====================================== pc nav ===================================================== -->
+         <h1><a href="main.html"><span class="hidden clearfix">logo</span></a></h1>
+
+         <button class="menu" aria-hidden="true">
+           <i class="fas fa-bars"></i>
+         </button>
+
+         <button class="mypage_icon">
+          <i class="fas fa-user-alt"></i>
+         </button>
+
+         <button class="search_icon">
+          <i class="fas fa-search"></i>
+         </button>
+
+         <div class="categori">
+             <button type="button" class="nav_close">
+               <i class="fas fa-chevron-left" aria-hidden="true"></i>
+               <span class="hidden">네비 닫기</span>
+             </button>
+
+           <div class="nav_list">
+             <ul>
+               <li><a href="#"><span>home</span></a></li>
+               <li><a href="#profile"><span>profile</span></a></li>
+               <li><a href="#portfolio"><span>portfolio</span></a></li>
+               <li><a href="#resume"><span>resume</span></a></li>
+               <li><a href="#footBox"><span>content</span></a></li>
+             </ul>
+           </div> <!-- nav_list -->
+         </div> <!-- categori -->
+         <!-- ====================================== mobile nav ===================================================== -->
        </header> <!-- #headBox -->
 
        <main id="banner">
@@ -179,7 +211,6 @@
              </div> <!-- abProgram_02 -->
            </div> <!-- abBox -->
           </section> <!-- skill_pop -->
-
 
          <div class="profileBox">
            <div class="myImg">
@@ -410,5 +441,6 @@
 <script src="../js/src/gage_pop.js"></script>
 <script src="../js/src/click_btn.js"></script>
 <script src="../js/src/top_btn.js"></script>
+<script src="../js/src/menu_btn.js"></script>
 </body>
 </html>
