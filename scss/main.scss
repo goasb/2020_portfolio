@@ -7,6 +7,7 @@
 
 // ========================== mixin =======================================================
 
+@import "./_size/main_375";
 @import "./_size/main_768";
 @import "./_size/main_1280";
 
@@ -75,7 +76,6 @@ button:focus{outline:0;}
     .mypage_icon {display: none;}
     .search_icon {display: none;}
     .categori {display: none;}
-    .nav_list {display: none;}
 } // #headBox
 
 
@@ -1032,5 +1032,6 @@ button:focus{outline:0;}
         } /* textBox */
     } /* footBox */ 
 
+@include main_375;
 @include main_768;
 @include main_1280;

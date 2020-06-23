@@ -7,6 +7,7 @@ const closeBtn = $('.nav_close');
 openBtn.on('click',function(e){
     e.preventDefault();
     categori.addClass('active');
+    
 });
 closeBtn.on('click',function(e){
     e.preventDefault();
