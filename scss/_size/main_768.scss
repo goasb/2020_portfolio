@@ -183,17 +183,6 @@
                     height: 570px;
                     @include url;
                     background-image: url(../img/my.png);
-                    
-                    .circle {
-                        position: absolute;
-                        left:22%;
-                        top:15%;
-                        width: 20rem;
-                        height: 20rem;
-                        opacity:30%;
-                        @include url;
-                        background-image: url(../img/compass.png);
-                    }
                 } /* myImg */
         
                 .myTextBox {

@@ -137,8 +137,6 @@ button:focus { outline: 0; }
 
 #profile .profileBox .myImg { float: left; width: 400px; height: 570px; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-image: url(../img/my.png); }
 
-#profile .profileBox .myImg .circle { position: absolute; z-index: -10; left: 20%; top: 25%; width: 300px; height: 300px; opacity: 30%; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-image: url(../img/compass.png); }
-
 #profile .profileBox .myTextBox { color: #222; float: right; width: 660px; height: 570px; /* intro */ /* Privacy */ /* buttonBox */ }
 
 #profile .profileBox .myTextBox .intro { width: 100%; height: 250px; }
@@ -193,7 +191,7 @@ button:focus { outline: 0; }
 
 #portfolio .product_textBox p { text-align: center; margin-bottom: 40px; }
 
-#portfolio .product_textBox .red_line { margin: auto; width: 4px; height: 30px; background-color: red; }
+#portfolio .product_textBox .red_line { margin: auto; width: 4px; height: 30px; background-color: #222; }
 
 #portfolio .product { margin-bottom: 30px; width: 100%; height: 384px; /* ul */ }
 
@@ -247,7 +245,7 @@ button:focus { outline: 0; }
 
 #resume .product_textBox p { text-align: center; margin-bottom: 40px; }
 
-#resume .product_textBox .red_line { margin: auto; width: 4px; height: 30px; background-color: red; }
+#resume .product_textBox .red_line { margin: auto; width: 4px; height: 30px; background-color: #222; }
 
 #resume .resumeBox { padding-top: 100px; width: 1120px; height: 800px; margin: auto; /* title */ /* .title_02 */ /* resume_element */ /* Education */ /* Experience */ }
 
@@ -314,8 +312,8 @@ button:focus { outline: 0; }
 #footBox .textBox .site h2 { font-size: 18px; line-height: 1.7; }
 
 /* footBox */
-@media screen and (max-width: 767px) { #wrap { width: 100%; height: 100%; overflow: hidden; }
-  #bg { width: 100%; height: 700px; overflow: hidden; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-image: url(../img/main_bg_02.jpg); background-size: cover; }
+@media screen and (max-width: 767px) { #wrap { width: 100%; height: 100%; }
+  #bg { width: 100%; height: 720px; overflow: hidden; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-image: url(../img/main_bg_02.jpg); background-size: cover; }
   #headBox { position: fixed; z-index: 9999; width: 100%; height: 4rem; padding-top: 0; background-color: #222; }
   #headBox .nav { display: none; }
   #headBox h1 { display: none; }
@@ -344,33 +342,64 @@ button:focus { outline: 0; }
   #banner .textBox .work p { font-size: 16px; font-weight: 300; }
   #banner .textBox .icon .fontawesome { width: 18.75rem; display: inline-block; position: absolute; top: 20rem; left: 50%; -ms-transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
   #banner .textBox .pointer { margin-top: 300px; width: 100%; height: 80px; }
-  #profile { padding-top: 100px; box-sizing: border-box; width: 100%; height: 780px; /* skill_pop */ /* .profileBox */ }
+  #profile { padding-top: 50px; box-sizing: border-box; width: 100%; height: 1200px; /* skill_pop */ /* .profileBox */ }
+  #profile .top-btn { position: fixed; z-index: 2000; width: 25px; height: 25px; bottom: 2.5rem; right: 1.5rem; box-sizing: content-box; border-radius: 0.5rem; text-transform: capitalize; line-height: 2.5rem; transition: all 1000ms ease; background-color: #222; }
+  #profile .top-btn p { font-size: 3px; line-height: 10px; }
+  #profile .top-btn:hover, #profile .top-btn:focus { background-color: red; animation: bonus 1000ms ease infinite alternate; }
   #profile .skill_pop { opacity: 0; }
   #profile .profileBox { width: 100%; height: 570px; margin: auto; /* myImg */ /* myTextBox */ }
-  #profile .profileBox .myImg { position: relative; width: 100%; height: 570px; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-image: url(../img/my.png); }
-  #profile .profileBox .myImg .circle { position: absolute; left: 22%; top: 15%; width: 20rem; height: 20rem; opacity: 30%; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-image: url(../img/compass.png); }
-  #profile .profileBox .myTextBox { color: #222; float: right; width: 100%; height: 620px; padding: 15px; box-sizing: border-box; }
-  #profile .profileBox .myTextBox .buttonBox { margin: auto; }
+  #profile .profileBox .myImg { position: relative; width: 100%; height: 300px; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-image: url(../img/my.png); }
+  #profile .profileBox .myTextBox { color: #222; float: right; width: 100%; height: 1000px; padding: 15px; box-sizing: border-box; /* intro */ /* Privacy */ /* buttonBox */ }
+  #profile .profileBox .myTextBox .intro { width: 100%; height: 450px; }
+  #profile .profileBox .myTextBox .Privacy { width: 100%; height: 250px; /* leftBox */ /* rightBox */ }
+  #profile .profileBox .myTextBox .Privacy p { font-size: 14px; line-height: 50px; }
+  #profile .profileBox .myTextBox .Privacy .leftBox { float: left; width: 35%; height: 100%; }
+  #profile .profileBox .myTextBox .Privacy .rightBox { float: right; width: 65%; height: 100%; }
+  #profile .profileBox .myTextBox .buttonBox { padding-top: 20px; box-sizing: border-box; width: 100%; height: 70px; /* contact */ /* skill */ }
+  #profile .profileBox .myTextBox .buttonBox .contact { float: left; width: 45%; height: 50px; border-radius: 30px; border: 1px solid #222; /* a */ }
+  #profile .profileBox .myTextBox .buttonBox .contact a { display: block; color: #222; width: 100%; height: 100%; text-align: center; /* span */ }
+  #profile .profileBox .myTextBox .buttonBox .contact a span { line-height: 50px; font-weight: bold; }
+  #profile .profileBox .myTextBox .buttonBox .skill { float: right; width: 45%; height: 50px; border-radius: 30px; border: 1px solid #222; /* a */ }
+  #profile .profileBox .myTextBox .buttonBox .skill a { display: block; color: #222; width: 100%; height: 100%; /* span */ }
+  #profile .profileBox .myTextBox .buttonBox .skill a span { display: block; text-align: center; line-height: 50px; font-weight: bold; }
   /* #profile */
-  #portfolio { margin-top: 500px; width: 100%; height: 1200px; /* product_textBox */ /* .product */ /* load_more */ }
-  #portfolio .product_textBox { margin: auto; width: 100%; height: 200px; }
-  #portfolio .product { margin-bottom: 30px; width: 100%; height: 384px; /* ul */ }
+  #portfolio { width: 100%; height: 1200px; /* product_textBox */ /* .product */ /* load_more */ }
+  #portfolio .product_textBox { margin: auto; width: 90%; height: 280px; }
+  #portfolio .product_textBox h2 { text-align: center; width: 100%; height: 50px; }
+  #portfolio .product_textBox p { text-align: center; margin-top: 15%; }
+  #portfolio .product_textBox .red_line { margin: auto; width: 4px; height: 30px; background-color: #222; }
+  #portfolio .product { margin-bottom: 10%; width: 100%; height: 1100px; /* ul */ }
   #portfolio .product ul { width: 100%; height: 100%; }
-  #portfolio .product ul li { margin: auto; width: 50%; }
-  #portfolio .load_more { margin-top: 27rem; }
+  #portfolio .product ul li { margin: auto; width: 100%; height: 25%; }
+  #portfolio .load_more { margin-top: 3rem; }
   /* #portfolio */
-  #resume { width: 100%; height: 2550px; /* product_textBox */ /* resumeBox */ /* main_slide */ }
-  #resume .product_textBox { margin-top: -25%; width: 100%; height: 160px; }
-  #resume .resumeBox { padding-top: 50px; width: 35rem; height: 1500px; margin: auto; /* Education */ /* Experience */ }
-  #resume .resumeBox .Education { width: 35rem; height: 750px; margin: auto; }
-  #resume .resumeBox .Experience { width: 35rem; height: 750px; }
-  #resume .persona_slide { overflow: hidden; margin: auto; position: relative; width: 100%; height: 300px; margin-top: 80px; /* btn */ }
+  #resume { margin-top: 25rem; width: 100%; height: 1600px; /* product_textBox */ /* resumeBox */ /* fixBox */ /* main_slide */ }
+  #resume .product_textBox { margin-top: -50%; width: 100%; height: 160px; }
+  #resume .resumeBox { padding-top: 50px; width: 90%; height: 100%; margin: auto; /* resume_element */ /* Education */ /* Experience */ }
+  #resume .resumeBox .resume_element { width: 100%; height: 50px; border: 1px solid #222; margin-bottom: 20px; }
+  #resume .resumeBox .resume_element p { display: none; }
+  #resume .resumeBox .resume_element span { display: block; width: 85%; padding: 15px; font-weight: bold; }
+  #resume .resumeBox .resume_element .underline { display: none; }
+  #resume .resumeBox .Education { width: 100%; height: 320px; margin: auto; }
+  #resume .resumeBox .Experience { width: 100%; height: 320px; }
+  #resume .fixBox { position: relative; margin-bottom: 50px; width: 100%; height: 300px; top: -50%; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-image: url(../img/code.jpg); background-size: cover; background-position: 50% 50%; background-attachment: fixed; opacity: 30%; }
+  #resume .persona_slide { overflow: hidden; margin: auto; position: relative; top: -55%; width: 100%; height: 300px; margin-top: 80px; /* btn */ /* ul */ }
   #resume .persona_slide .btn { position: absolute; z-index: 30; bottom: 35%; width: 100%; height: 100px; }
+  #resume .persona_slide ul { position: relative; margin-left: -100%; width: 400%; height: 100%; /* li */ }
+  #resume .persona_slide ul li { float: left; width: 25%; height: 100%; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; }
+  #resume .persona_slide ul li.persona_slide_image_01 { background-image: url("../img/persona_01.png"); background-size: 150%; }
+  #resume .persona_slide ul li.persona_slide_image_02 { background-image: url("../img/persona_02.png"); background-size: 150%; }
+  #resume .persona_slide ul li.persona_slide_image_03 { background-image: url("../img/persona_03.png"); background-size: 150%; }
   /* #resume */
   .emptyBox { display: none; }
   /* emptyBox */
-  #footBox { width: 100%; height: 220px; background-color: #222; color: #fff; /* textBox */ }
-  #footBox .textBox { width: 100%; height: 100%; margin: auto; text-align: center; }
+  #footBox { position: relative; width: 100%; height: 120px; background-color: #222; color: #fff; /* textBox */ }
+  #footBox .textBox { width: 100%; height: 100%; margin: auto; text-align: center; /* link */ }
+  #footBox .textBox .link { margin: auto; width: 250px; height: 50px; display: flex; /* li */ }
+  #footBox .textBox .link li { width: 100px; height: 100%; margin-left: 12px; }
+  #footBox .textBox .link li a { display: block; width: 100%; height: 100%; color: #fff; line-height: 80px; }
+  #footBox .textBox .site { display: none; }
+  #footBox .textBox .copyright { width: 100%; height: 20px; }
   /* footBox */ }
 
 @media screen and (min-width: 768px) and (max-width: 1279px) { #wrap { width: 100%; height: 100%; }
@@ -402,7 +431,6 @@ button:focus { outline: 0; }
   #profile .skill_pop { opacity: 0; }
   #profile .profileBox { width: 100%; height: 570px; margin: auto; /* myImg */ /* myTextBox */ }
   #profile .profileBox .myImg { position: relative; width: 100%; height: 570px; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-image: url(../img/my.png); }
-  #profile .profileBox .myImg .circle { position: absolute; left: 22%; top: 15%; width: 20rem; height: 20rem; opacity: 30%; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-image: url(../img/compass.png); }
   #profile .profileBox .myTextBox { color: #222; float: right; width: 100%; height: 620px; padding: 15px; box-sizing: border-box; }
   #profile .profileBox .myTextBox .buttonBox { margin: auto; }
   /* #profile */

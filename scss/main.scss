@@ -468,18 +468,6 @@ button:focus{outline:0;}
             height: 570px;
             @include url;
             background-image: url(../img/my.png);
-            
-            .circle {
-                position: absolute;
-                z-index: -10;
-                left:20%;
-                top:25%;
-                width: 300px;
-                height: 300px;
-                opacity:30%;
-                @include url;
-                background-image: url(../img/compass.png);
-            }
         } /* myImg */
 
         .myTextBox {
@@ -656,7 +644,7 @@ button:focus{outline:0;}
             margin:auto;
             width: 4px;
             height: 30px;
-            background-color: red;
+            background-color: #222;
         }
     } /* product_textBox */
 
@@ -826,7 +814,7 @@ button:focus{outline:0;}
             margin:auto;
             width: 4px;
             height: 30px;
-            background-color: red;
+            background-color: #222;
         }
     } /* product_textBox */
 

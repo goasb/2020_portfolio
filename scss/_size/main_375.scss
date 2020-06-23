@@ -1,8 +1,8 @@
 @mixin main_375{
     @media screen and (max-width:767px) {
     // ======================================================================================
-    #wrap {width:100%; height: 100%; overflow: hidden;}
-    #bg {width: 100%; height: 700px; 
+    #wrap {width:100%; height: 100%; }
+    #bg {width: 100%; height: 720px; 
         overflow: hidden;
          @include url; 
          background-image: url(../img/main_bg_02.jpg);
@@ -192,11 +192,33 @@
         // ============================================================================
 
         #profile {
-            padding-top:100px;
+            padding-top:50px;
             box-sizing: border-box;
             width: 100%;
-            height: 780px;
+            height: 1200px;
+
+            .top-btn {
+                position:fixed;
+                z-index:2000;
+                width: 25px;
+                height: 25px;
+                bottom:2.5rem;
+                right:1.5rem;
+                box-sizing: content-box;
+                border-radius: 0.5rem;
+                text-transform: capitalize;
+                line-height: 2.5rem;
+                transition:all 1000ms ease;
+                background-color: #222;
+
+                p {font-size:3px;
+                line-height:10px;}
         
+                &:hover,&:focus {
+                    background-color: red;
+                    animation:bonus 1000ms ease infinite alternate;
+                }
+            }
 
             .skill_pop {
                 opacity: 0;
@@ -210,33 +232,97 @@
                 .myImg {
                     position:relative;
                     width: 100%;
-                    height: 570px;
+                    height: 300px;
                     @include url;
                     background-image: url(../img/my.png);
-                    
-                    .circle {
-                        position: absolute;
-                        left:22%;
-                        top:15%;
-                        width: 20rem;
-                        height: 20rem;
-                        opacity:30%;
-                        @include url;
-                        background-image: url(../img/compass.png);
-                    }
                 } /* myImg */
         
                 .myTextBox {
                     color:#222;
                     float:right;
                     width: 100%;
-                    height: 620px;
+                    height: 1000px;
                     padding:15px;
                     box-sizing: border-box;
 
+                    .intro {
+                        width: 100%;
+                        height: 450px;
+                    } /* intro */
+
+                    .Privacy {
+                        width: 100%;
+                        height: 250px;
+        
+                        p {
+                            font-size: 14px;
+                            line-height: 50px;
+                        }
+        
+                        .leftBox {
+                            float:left;
+                            width: 35%;
+                            height: 100%;
+                        } /* leftBox */
+        
+                        .rightBox {
+                            float:right;
+                            width: 65%;
+                            height: 100%;
+                        } /* rightBox */    
+                    } /* Privacy */
+        
+
                     .buttonBox {
-                        margin:auto;
-                    }
+                        padding-top:20px;
+                        box-sizing: border-box;
+                        width: 100%;
+                        height: 70px;
+        
+                        .contact {
+                            float:left;
+                            width: 45%;
+                            height: 50px;
+                            border-radius:30px;
+                            border:1px solid #222;
+        
+                            a {
+                                display: block;
+                                color:#222;
+                                width: 100%;
+                                height: 100%;
+                                text-align: center;
+              
+                            span {
+                                line-height: 50px;
+                                font-weight: bold;  
+                            } /* span */
+                          } /* a */
+                        } /* contact */
+        
+                        .skill {
+                            float:right;
+                            width: 45%;
+                            height: 50px;
+                            border-radius:30px;
+                            border:1px solid #222;
+        
+                            a {
+                                display: block;
+                                color:#222;
+                                width: 100%;
+                                height: 100%;
+                            
+        
+                            span {
+                                display: block;
+                                text-align: center;
+                                line-height: 50px;
+                                font-weight: bold;
+                            } /* span */
+                          } /* a */
+                        } /* skill */
+                    } /* buttonBox */
                 } /* myTextBox */
             } /* .profileBox */
         } /* #profile */
@@ -244,21 +330,37 @@
         
         
         #portfolio {
-            margin-top:500px;
             width: 100%;
             height: 1200px;
         
             .product_textBox {
                 margin:auto;
-                width: 100%;
-                height: 200px;
+                width: 90%;
+                height: 280px;
+
+                h2 {
+                    text-align: center;
+                    width: 100%;
+                    height: 50px;
+                }
         
+                p {
+                    text-align: center;
+                    margin-top:15%;
+                }
+                
+                .red_line {
+                    margin:auto;
+                    width: 4px;
+                    height: 30px;
+                    background-color: #222;
+                }
             } /* product_textBox */
         
             .product {
-                margin-bottom:30px;
+                margin-bottom:10%;
                 width:100%;
-                height: 384px;
+                height: 1100px;
 
                 ul {
                     width: 100%;
@@ -266,50 +368,90 @@
         
                     li {
                         margin:auto;
-                        width:50%;
+                        width:100%;
+                        height:25%;
                     }
                 } /* ul */
             } /* .product */
         
             .load_more {
-                    margin-top:27rem;
+                    margin-top:3rem;
             } /* load_more */
         } /* #portfolio */
         // ============================================================================
         
         
         #resume {
+            margin-top:25rem;
             width: 100%;
-            height: 2550px;
+            height: 1600px;
         
             .product_textBox {
-                margin-top:-25%;
+                margin-top:-50%;
                 width: 100%;
                 height: 160px;
             } /* product_textBox */
         
         .resumeBox {
             padding-top:50px;
-            width: 35rem;
-            height: 1500px;
+            width: 90%;
+            height: 100%;
             margin:auto;
-    
+             
+            .resume_element {
+                width: 100%;
+                height:50px;
+                border:1px solid #222;
+                margin-bottom:20px;
+        
+                p {
+                    display: none;
+                }
+        
+                span {
+                    display: block;
+                    width: 85%;
+                    padding:15px;
+                    font-weight:bold;
+                }
+        
+                .underline {
+                    display: none;
+                }
+            } /* resume_element */
+
             .Education {
-                width: 35rem;
-                height: 750px;
+                width: 100%;
+                height:320px;
                 margin:auto;
             } /* Education */
         
             .Experience {
-                width: 35rem;
-                height: 750px;
+                width: 100%;
+                height: 320px;
             } /* Experience */
          } /* resumeBox */
+
+         .fixBox {
+            position: relative;
+            margin-bottom:50px;
+            width: 100%;
+            height: 300px;
+            top:-50%;
+
+            @include url;
+            background-image: url(../img/code.jpg);
+            background-size:cover;
+            background-position: 50% 50%;
+            background-attachment: fixed;
+            opacity: 30%;
+        } /* fixBox */
         
             .persona_slide {
                 overflow: hidden;
                 margin: auto;
                 position: relative;
+                top:-55%;
                 width: 100%;
                 height: 300px;
                 margin-top: 80px;
@@ -321,6 +463,36 @@
                     width: 100%;
                     height: 100px;
                 } /* btn */
+
+                ul {
+                    $count: 4;
+                    position: relative;
+                    margin-left: -100%;
+                    width: 100% * $count;
+                    height: 100%;
+        
+                    li {
+                        float: left;
+                        width: 100% / $count;
+                        height: 100%;
+                        @include url;
+        
+                        &.persona_slide_image_01 {
+                            background-image: url("../img/persona_01.png");
+                            background-size:150%;
+                        }
+        
+                        &.persona_slide_image_02 {
+                            background-image: url("../img/persona_02.png");
+                            background-size:150%;
+                        }
+        
+                        &.persona_slide_image_03 {
+                            background-image: url("../img/persona_03.png");
+                            background-size:150%;
+                        }
+                    } /* li */
+                } /* ul */
             } /* main_slide */
         } /* #resume */
         // ============================================================================
@@ -332,8 +504,9 @@
 
          
             #footBox {
+                position: relative;
                 width: 100%;
-                height: 220px;
+                height: 120px;
                 background-color: #222;
                 color:#fff;
         
@@ -342,6 +515,36 @@
                     height: 100%;
                     margin:auto;
                     text-align: center;
+
+                    .link {
+                        margin:auto;
+                        width: 250px;
+                        height: 50px;
+                        display: flex;
+        
+                        li {
+                            width: 100px;
+                            height: 100%;
+                            margin-left: 12px;
+        
+                            a {
+                                display: block;
+                                width: 100%;
+                                height: 100%;
+                                color:#fff;
+                                line-height: 80px;
+                            }
+                        } /* li */
+                    } /* link */
+        
+                    .site {
+                       display: none;
+                    }
+
+                    .copyright {
+                        width: 100%;
+                        height: 20px;
+                    }
 
                 } /* textBox */
             } /* footBox */ 
