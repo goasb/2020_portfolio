@@ -143,7 +143,7 @@
         
                 .im { 
                     margin:auto;
-                    width: 20rem;
+                    width: 83%;
                     height: 50px;
                     p {
                         font-size: 30px;
@@ -211,7 +211,7 @@
                 transition:all 1000ms ease;
                 background-color: #222;
 
-                p {font-size:3px;
+                p {font-size:70%;
                 line-height:10px;}
         
                 &:hover,&:focus {
@@ -442,7 +442,7 @@
             @include url;
             background-image: url(../img/code.jpg);
             background-size:cover;
-            background-position: 50% 50%;
+            background-position: 50% 70%;
             background-attachment: fixed;
             opacity: 30%;
         } /* fixBox */

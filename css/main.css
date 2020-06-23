@@ -335,7 +335,7 @@ button:focus { outline: 0; }
   #banner { padding-top: 160px; margin: auto; width: 23.4375rem; height: 550px; }
   #banner .textBox { width: 100%; height: 200px; text-align: center; }
   #banner .textBox .hi p { font-size: 20px; text-align: center; }
-  #banner .textBox .im { margin: auto; width: 20rem; height: 50px; }
+  #banner .textBox .im { margin: auto; width: 83%; height: 50px; }
   #banner .textBox .im p { font-size: 30px; float: left; line-height: 50px; }
   #banner .textBox .im span { font-size: 38px; font-weight: bold; float: right; }
   #banner .textBox .work { padding-top: 1rem; margin: auto; width: 200px; height: 40px; }
@@ -344,7 +344,7 @@ button:focus { outline: 0; }
   #banner .textBox .pointer { margin-top: 300px; width: 100%; height: 80px; }
   #profile { padding-top: 50px; box-sizing: border-box; width: 100%; height: 1200px; /* skill_pop */ /* .profileBox */ }
   #profile .top-btn { position: fixed; z-index: 2000; width: 25px; height: 25px; bottom: 2.5rem; right: 1.5rem; box-sizing: content-box; border-radius: 0.5rem; text-transform: capitalize; line-height: 2.5rem; transition: all 1000ms ease; background-color: #222; }
-  #profile .top-btn p { font-size: 3px; line-height: 10px; }
+  #profile .top-btn p { font-size: 70%; line-height: 10px; }
   #profile .top-btn:hover, #profile .top-btn:focus { background-color: red; animation: bonus 1000ms ease infinite alternate; }
   #profile .skill_pop { opacity: 0; }
   #profile .profileBox { width: 100%; height: 570px; margin: auto; /* myImg */ /* myTextBox */ }
@@ -382,7 +382,7 @@ button:focus { outline: 0; }
   #resume .resumeBox .resume_element .underline { display: none; }
   #resume .resumeBox .Education { width: 100%; height: 320px; margin: auto; }
   #resume .resumeBox .Experience { width: 100%; height: 320px; }
-  #resume .fixBox { position: relative; margin-bottom: 50px; width: 100%; height: 300px; top: -50%; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-image: url(../img/code.jpg); background-size: cover; background-position: 50% 50%; background-attachment: fixed; opacity: 30%; }
+  #resume .fixBox { position: relative; margin-bottom: 50px; width: 100%; height: 300px; top: -50%; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-image: url(../img/code.jpg); background-size: cover; background-position: 50% 70%; background-attachment: fixed; opacity: 30%; }
   #resume .persona_slide { overflow: hidden; margin: auto; position: relative; top: -55%; width: 100%; height: 300px; margin-top: 80px; /* btn */ /* ul */ }
   #resume .persona_slide .btn { position: absolute; z-index: 30; bottom: 35%; width: 100%; height: 100px; }
   #resume .persona_slide ul { position: relative; margin-left: -100%; width: 400%; height: 100%; /* li */ }
